@@ -74,7 +74,7 @@ router.get("", async (req,res)=>{
 
     const currentCategoryData = await Category.find({"_id" : req.query.id});
     const currentCategoryProducts = await Product.find({"categoryName" : currentCategoryData[0].categoryName})
-    res.render("category",{categoriesData : aboutsectionData , currentCategoryData : currentCategoryData , currentCategoryProducts : currentCategoryProducts})
+    res.render("category",{categoriesData : aboutsectionData , currentCategoryData : currentCategoryData , currentCategoryProducts : currentCategoryProducts , about : aboutsectionData} )
 })
 
 router.get("/viewAllCategory", async(req,res)=>{
@@ -104,7 +104,7 @@ router.get("/viewAllCategory", async(req,res)=>{
         });
 
         // console.log(aboutsectionData)
-        res.render("Allproducts",{categoriesData : aboutsectionData});
+        res.render("Allproducts",{categoriesData : aboutsectionData  , about : aboutsectionData});
 
 
     // const data = await Category.find({});

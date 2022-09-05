@@ -1,14 +1,17 @@
 const contactUs = require("../models/contactUs");
 const router = require("express").Router();
 const config = require('../config.json');
-const jwtverify = require("jsonwebtoken")
+const jwtverify = require("jsonwebtoken");
+
+const getcategoryData = require("../routes/getCategoryData")
 
 
 
 
-router.get("",(req,res)=>{
+router.get("",async (req,res)=>{
 
-    res.render("contact")
+    let categorydata = await getcategoryData();
+    res.render('contact',{ about: categorydata})
 
 })
 

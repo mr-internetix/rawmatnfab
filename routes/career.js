@@ -3,6 +3,7 @@ const multer = require("multer");
 const fs = require("fs");
 const path = require("path");
 const careerInfo = require("../models/career");
+const getcategoryData = require("../routes/getCategoryData")
 
 // checking if the directory no tfound then adding directory
 
@@ -33,8 +34,10 @@ const upload = multer({
 // resume and career info route 
 
 
-router.get('',(req,res)=>{
-    res.render("career")
+router.get('',async (req,res)=>{
+    let categorydata = await getcategoryData();
+    res.render('career',{ about: categorydata})
+    
 })
 
 router.post("", upload.single("resume_pdf"), async(req, res) => {

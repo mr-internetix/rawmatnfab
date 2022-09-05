@@ -4,10 +4,10 @@
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-        <video id="video" autoplay="true"  muted loop>
+        <!-- <video id="video" autoplay="true"  muted loop>
             <source src="/static/assets/images/banner1.mp4" type="video/mp4">
             </video>
-        </div>
+        </div> -->
     <% urls.map((url) =>{ %>
 
         <div class="swiper-slide"><img src="<%=url %>" class="img-fluid"></div>
@@ -32,7 +32,9 @@
     <div class="col-sm-6 p-lg-5 p-small">
     <h3 class="py-5 block-small"></h3>
       <h5>Welcome to Raw Matnfab</h5>
-      <p>Established in the year 2018 RAW matNfab is an ISO 9001: 2015 Certified company and one of the striking Manufacturer of Flanges, Fittings, Outlets, Fasteners, Lifting and Handling Equipment Including Manufacturing of precision CNC machined parts and assemblies for manufacturers in the aerospace, defense & military, food processing & pharmaceutical, heavy equipment, medical equipment, mining, oil & gas, power generation, transportation, and general industrial markets. The company's state-of-the-art facilities use the latest CNC manufacturing technologies to produce complex and intricate components that meet or exceed the most critical tolerances. We machine parts from castings, weldments, forgings, tubing and bar stock that range in weight from 1 pound to 2,000 pounds and pipe spool and Fabricated Components and Supplier of Industrial Raw Materials Pipes, Plates, Bars, Coils in Ferrous and Non Ferrous Grades. We maintain total control on the quality of goods and use the latest technology to manufacture our products.</p>
+      <p>
+        <%- aboutData[0].about %> 
+      </p>
       <div><a href="/about"><button class="py-2 px-3" style="background-color:#753825;color:#fff;border:none;">Learn More</button></a></div>
     </div>
     <div class="col-sm-1"></div>
@@ -68,7 +70,9 @@
               
             </div>
             <div class="flip-card-back py-5">
-            <p class="px-4 pb-4">To supply high-quality steel products, providing ancillary services and solutions to worldwide clients while using innovative technologies which are environment-friendly to motivate our employees to focus on continuous improvement, highest business standards, work ethics, and corporate citizenship. We are committed to exceeding the expectations of our customers by providing high-quality products & services. We aim to excel in everything we do.</p>
+            <p class="px-4 pb-4">
+              <%- missionData[0].mission %>   
+              </p>
             </div>
           </div>
         </div>
@@ -89,7 +93,7 @@
               
             </div>
             <div class="flip-card-back py-5">
-            <p class="px-4 pb-4">To attain a forefront position in the global manufacturer & supplier of steel product, complex precision CNC machined components & engineering goods through performance excellence by providing quality & cost-effective metal packaging products.</p>
+            <p class="px-4 pb-4"><%- missionData[0].vision %> </p>
             </div>
           </div>
         </div>
@@ -109,7 +113,7 @@
               
             </div>
             <div class="flip-card-back py-5">
-            <p class="px-4 pb-4">To supply high-quality steel products, providing ancillary services and solutions to worldwide clients while using innovative technologies which are environment-friendly to motivate our employees to focus on continuous improvement, highest business standards, work ethics, and corporate citizenship. We are committed to exceeding the expectations of our customers by providing high-quality products & services. We aim to excel in everything we do.</p>
+            <p class="px-4 pb-4"><%- missionData[0].goal %> </p>
             </div>
           </div>
         </div>

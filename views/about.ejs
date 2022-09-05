@@ -19,9 +19,7 @@
             <h3 class="py-lg-5"></h3>
             <h5>Welcome to Raw Matnfab</h5>
             <p style="text-align:justify;">
-            Established in the year 2018 RAW matNfab is an ISO 9001: 2015 Certified company and one of the striking Manufacturer of Flanges, Fittings, Outlets, Fasteners, Lifting and Handling Equipment Including Manufacturing of precision CNC machined parts and assemblies for manufacturers in the aerospace, defense & military, food processing & pharmaceutical, heavy equipment, medical equipment, mining, oil & gas, power generation, transportation, and general industrial markets.The company's state-of-the-art facilities use the latest CNC manufacturing technologies to produce complex and intricate components that meet or exceed the most critical tolerances. We machine parts from castings, weldments, forgings, tubing and bar stock that range in weight from 1 pound to 2,000 pounds and pipe spool and Fabricated Components and Supplier of Industrial Raw Materials Pipes, Plates, Bars, Coils in Ferrous and Non Ferrous Grades. We maintain total control on the quality of goods and use the latest technology to manufacture our products.<span id="dots">...</span> <span id="more"><br><br>
-            We supply pipes, tubes, plates, fittings and flanges of major approved brands and many more. Being an ISO certified Company our quality control team ensures that all the products are manufactured as per standard requirement referring to (ASME and ASTM) and all other national and international standards.<br><br>
-            RAW matNfab was established in 2018 and has evolved into a multi-facility operation with locations in Navi Mumbai serving the Talis group and international customers. We employ a highly-skilled workforce.
+            <%- aboutData[0].about %> 
             </span></p>
             <button class="px-3 py-2" onclick="myFunction()" id="myBtn" style="background-color:#753825;color:#fff;border:none">Read more</button>
         
@@ -45,7 +43,9 @@
               
             </div>
             <div class="flip-card-back py-5">
-            <p class="px-4 pb-4">To supply high-quality steel products, providing ancillary services and solutions to worldwide clients while using innovative technologies which are environment-friendly to motivate our employees to focus on continuous improvement, highest business standards, work ethics, and corporate citizenship. We are committed to exceeding the expectations of our customers by providing high-quality products & services. We aim to excel in everything we do.</p>
+            <p class="px-4 pb-4">
+              <%- missionData[0].mission %> 
+            </p>
             </div>
           </div>
         </div>
@@ -66,7 +66,7 @@
               
             </div>
             <div class="flip-card-back py-5">
-            <p class="px-4 pb-4">To attain a forefront position in the global manufacturer & supplier of steel product, complex precision CNC machined components & engineering goods through performance excellence by providing quality & cost-effective metal packaging products.</p>
+            <p class="px-4 pb-4"><%- missionData[0].vision %> </p>
             </div>
           </div>
         </div>
@@ -86,7 +86,9 @@
               
             </div>
             <div class="flip-card-back py-5">
-            <p class="px-4 pb-4">To supply high-quality steel products, providing ancillary services and solutions to worldwide clients while using innovative technologies which are environment-friendly to motivate our employees to focus on continuous improvement, highest business standards, work ethics, and corporate citizenship. We are committed to exceeding the expectations of our customers by providing high-quality products & services. We aim to excel in everything we do.</p>
+            <p class="px-4 pb-4">
+              <%- missionData[0].goal %> 
+            </p>
             </div>
           </div>
         </div>

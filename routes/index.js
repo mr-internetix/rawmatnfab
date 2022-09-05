@@ -3,13 +3,17 @@ const carousalimage = require('../models/carouselImage')
 const Category = require('../models/category')
 const Product = require('../models/product')
 const visitors = require('../models/visitors')
+const mission = require('../models/mission')
+const about = require('../models/about')
 
 
 router.get('', async(req, res) => {
     let data = await carousalimage.find({});
     let categorydata = await getcategoryData();
+    const missionData  = await mission.find({})
+    const aboutData   = await about.find({})
     urls = data.map(data => data.imageurl);
-    res.render('index.ejs', { urls: urls , about: categorydata});
+    res.render('index.ejs', { urls: urls , about: categorydata , missionData : missionData, aboutData : aboutData });
     await  visitors.findOneAndUpdate({'_id' : '6307014a038b2f6235b2b120'},{$inc: {counter: 1}},{new:true})
 });
 
@@ -55,8 +59,9 @@ async function getcategoryData(){
 // other pages routes 
 
 
-router.get('/industries',(req,res)=>{
-    res.render('industries')
+router.get('/industries',async (req,res)=>{
+    let categorydata = await getcategoryData();
+    res.render('industries',{ about: categorydata})
 })
 
 module.exports = router;

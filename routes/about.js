@@ -1,10 +1,17 @@
 const router = require('express').Router();
 const about = require('../models/about');
+const getcategoryData = require("../routes/getCategoryData")
+const mission = require("../models/mission")
 
 
 
-router.get('',(req,res)=>{
-    res.render('about')
+
+router.get('',async (req,res)=>{
+    const missionData  = await mission.find({})
+    const aboutData   = await about.find({})
+    // console.log(aboutData , missionData)
+    let categorydata = await getcategoryData();
+    res.render('about',{ about: categorydata , missionData : missionData , aboutData: aboutData})
 })
 
 router.get('/getAbout',async (req, res)=>{

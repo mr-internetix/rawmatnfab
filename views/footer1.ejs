@@ -49,23 +49,20 @@
             
           <div class="col-sm-2 p-lg-5 p-small">
             <h4 class="pt-5 pb-3"><span class="pb-2" style="border-bottom:3px solid #c78366">Products</span></h4>
-            <p style="font-size:18px;font-weight:lighter!important;" class="py-1"><i class="fa-solid fa-caret-right px-1"></i> Flanges</p>
-            <p style="font-size:18px;font-weight:lighter!important;" class="py-1"><i class="fa-solid fa-caret-right px-1"></i> Butt Weild Fitting</p>
-            <p style="font-size:18px;font-weight:lighter!important;" class="py-1"><i class="fa-solid fa-caret-right px-1"></i> Forged Fitting</p>
-            <p style="font-size:18px;font-weight:lighter!important;" class="py-1"><i class="fa-solid fa-caret-right px-1"></i> Bar</p>
-            <p style="font-size:18px;font-weight:lighter!important;" class="py-1"><i class="fa-solid fa-caret-right px-1"></i> Pipe & Tube</p>
-            <p style="font-size:18px;font-weight:lighter!important;" class="py-1"><i class="fa-solid fa-caret-right px-1"></i> Plate</p>
-            
+            <% about.map(category => {%> 
+              <p style="font-size:18px;font-weight:lighter!important;" class="py-1"><a href="/category?id=<%= category.categoryId %>"><i class="fa-solid fa-caret-right px-1"></i> <%= category.categoryName %> </a></p>
+             
+           <%  })%>  
   
           </div>
           <div class="col-sm-2 p-lg-5 p-small">
           <h4 class="pt-5 pb-3"><span class="pb-2" style="border-bottom:3px solid #c78366">Quick Link</span></h4>
-          <p style="font-size:18px;font-weight:lighter!important;" class="py-1"><i class="fa-solid fa-caret-right px-1"></i> Home</p>
-          <p style="font-size:18px;font-weight:lighter!important;" class="py-1"><i class="fa-solid fa-caret-right px-1"></i> About Us</p>
-          <p style="font-size:18px;font-weight:lighter!important;" class="py-1"><i class="fa-solid fa-caret-right px-1"></i> Service</p>
-          <p style="font-size:18px;font-weight:lighter!important;" class="py-1"><i class="fa-solid fa-caret-right px-1"></i> carrer</p>
-          <p style="font-size:18px;font-weight:lighter!important;" class="py-1"><i class="fa-solid fa-caret-right px-1"></i> Certificate</p>
-          <p style="font-size:18px;font-weight:lighter!important;" class="py-1"><i class="fa-solid fa-caret-right px-1"></i> Contact Us</p>
+          <p style="font-size:18px;font-weight:lighter!important;" class="py-1"><a href="/"><i class="fa-solid fa-caret-right px-1"></i>Home </a></p>
+          <p style="font-size:18px;font-weight:lighter!important;" class="py-1"><a href="/about"><i class="fa-solid fa-caret-right px-1"></i>About Us </a></p>
+          <!-- <p style="font-size:18px;font-weight:lighter!important;" class="py-1"><a href=""><i class="fa-solid fa-caret-right px-1"></i>Service </a></p> -->
+          <p style="font-size:18px;font-weight:lighter!important;" class="py-1"><a href="/career"><i class="fa-solid fa-caret-right px-1"></i>career</a></p>
+          <p style="font-size:18px;font-weight:lighter!important;" class="py-1"><a href="/certificate"><i class="fa-solid fa-caret-right px-1"></i>Certificate</a></p>
+          <p style="font-size:18px;font-weight:lighter!important;" class="py-1"><a href="/contactus"><i class="fa-solid fa-caret-right px-1"></i>Contact Us</a></p>
          
           </div>
           <div class="col-sm-4 p-lg-5 p-small">

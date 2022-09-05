@@ -167,7 +167,7 @@ router.get("", async(req, res) => {
         
             const currentProduct = await Product.find({"productId" : product_id , "categoryName" : category_name });
             const currentCategoryProducts = await Product.find({"categoryName" : category_name})
-            res.render("product",{categoriesData : aboutsectionData , currentCategoryProducts : currentCategoryProducts , currentProduct : currentProduct })
+            res.render("product",{categoriesData : aboutsectionData , currentCategoryProducts : currentCategoryProducts , currentProduct : currentProduct , about : aboutsectionData })
         } else {
             res.json({ message: " Category Not found !" });
         }
