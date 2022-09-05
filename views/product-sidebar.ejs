@@ -1,0 +1,31 @@
+<div id="side-productbar" class="col-sm-3 block-small">
+    <div class="sidenav my-3">
+        <b><a href="">Category</a></b>
+    </div>
+
+    <div class="sidenav">
+        <div class="accordion" id="accordionExample">
+            <% categoriesData.map(category =>{ %>
+            
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="head<%= category.categoryName.replace(' ','-') %>">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#<%= category.categoryName.replace(' ','-') %>" aria-expanded="true" aria-controls="<%= category.categoryName.replace(' ','-') %>">
+                    <%= category.categoryName %> 
+                    </button>
+                    </h2>
+                    <div id="<%= category.categoryName.replace(' ','-') %>" class="accordion-collapse collapse" aria-labelledby="head<%= category.categoryName.replace(' ','-') %>" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <% category.products.map(product => { %>
+                            
+                            <a href="/product?id=<%= product.productId %>&category=<%= product.categoryName %>"><%- product.productName %> </a>
+                        <% }) %>
+                       
+                        
+                    </div>
+                    </div>  
+                </div>
+
+            <% }) %>
+        </div>
+    </div>
+</div>
