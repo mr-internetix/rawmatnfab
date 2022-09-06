@@ -90,7 +90,7 @@
         <div class="col-sm-5 p-small">
             <div class="p-lg-5" style="background-color:#fff;border-radius:15px;">
             <h3 class="py-3 text-center"><span class="py-2" style="border:none;border-bottom:2px solid #c78366;">Apply For Job Opportunities</span></h3>
-                        <form class="main_job_application_form px-3">
+                        <form id="career-form" class="main_job_application_form px-3">
                             <div class="form-group mb-4 main_form_group">
                                 <div class="form-floating">
                                     <input required="" type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name" style="background-color:#f0f0f0;">
@@ -130,14 +130,14 @@
                             </div>
                             <div class="form-group mb-4 main_form_group file_upload_main">
                                 <label for="resume" class="mb-2">Drop Your Resume Here</label>
-                                <input required="" name="resume" type="file" class="form-control" id="resume" accept=".pdf" style="background-color:#f0f0f0;">
+                                <input required="" name="resume" single type="file" class="form-control" id="resume" accept=".pdf" style="background-color:#f0f0f0;">
                                 <div class="progress d-none progress_bar_div mt-3">
                                     <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
 
                             <div class="form-group submit_btn_div p-small">
-                                <button class="btn btn-primary-main px-5 py-2" style="background-color:#c78366;color:#fff;">SEND</button>
+                                <button id="submit-career" class="btn btn-primary-main px-5 py-2" style="background-color:#c78366;color:#fff;">SEND</button>
                             </div>
                         </form>
 
@@ -147,5 +147,7 @@
         <div class="col-sm-2"></div>
     </div>
 </div>
+
+<script src="/static/assets/js/career.js"></script>
 
 <%- include('./footer.ejs'); %>

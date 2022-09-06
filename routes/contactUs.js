@@ -38,7 +38,7 @@ router.post("/", async(req, res) => {
 
             response = await contactus.save();
             res.json({
-                message: "Thank you for contacting us your form is saved we will get back to you son ",
+                message: "Thank you for contacting us your form is saved we will get back to you soon ",
             });
         }
     }

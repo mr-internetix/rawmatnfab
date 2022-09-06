@@ -87,41 +87,41 @@
                     <div class="col-sm-1"></div>
                     <div class="col-sm-10 p-2" style="border-bottom:1px solid black;">
                         <i class="fa fa-user icon" style="color:#753825;"></i>
-                        <input class="p-2" style="border:none;"  type="text" name="name" placeholder="Enter your name">
+                        <input class="p-2" style="border:none;" id="name" type="text" name="name" placeholder="Enter your name">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-1"></div> 
                     <div class="col-sm-10 p-2" style="border-bottom:1px solid black;">
                         <i class="fa fa-phone icon" style="color:#753825;"></i>
-                        <input class="p-2" style="border:none;" type="number" name="phone" placeholder="Enter your Mobile No.">
+                        <input class="p-2" style="border:none;" type="number" id="number" name="phone" placeholder="Enter your Mobile No.">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-1"></div>
                     <div class="col-sm-10 p-2" style="border-bottom:1px solid black;">
                         <i class="fa fa-envelope icon" style="color:#753825;"></i>
-                        <input class="p-2" style="border:none;"  type="email" name="email" placeholder="Enter your Email Id">
+                        <input class="p-2" style="border:none;"  type="email" id="email" name="email" placeholder="Enter your Email Id">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-1"></div> 
                     <div class="col-sm-10 p-2" style="border-bottom:1px solid black;">
                         <i class="fa-solid fa-file-lines icon" style="color:#753825;"></i>
-                        <input class="p-2" style="border:none;" type="text" name="subject" placeholder="Enter your Subject">
+                        <input class="p-2" style="border:none;" type="text" id="subject" name="subject" placeholder="Enter your Subject">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-1"></div> 
                     <div class="col-sm-10 p-2" style="border-bottom:1px solid black;">
                         <i class="fa-solid fa-file-lines icon py-2" style="color:#753825;position:absolute;"></i>
-                        <textarea class="py-2 px-4" row="3" style="border:none; resize: none; outline: none;" type="text" name="subject" placeholder="Enter your Message"></textarea>
+                        <textarea class="py-2 px-4" row="3" style="border:none; resize: none; outline: none;" id="message" type="text" name="message" placeholder="Enter your Message"></textarea>
                     </div>
                 </div>
                 <div class="row py-3">
                     <div class="col-sm-1"></div>
                     <div class="col-sm-10 p-2">
-                        <button class="py-2 px-4" style="background-color:#753825;color:#fff;border-color:#fff;">Submit</button>
+                        <button class="py-2 px-4" id="contact-submit" style="background-color:#753825;color:#fff;border-color:#fff;">Submit</button>
 
                     </div>
 
@@ -185,4 +185,6 @@
     
 </div>
 
+
+<script src="/static/assets/js/contactus.js"></script>
 <%- include('./footer.ejs'); %>

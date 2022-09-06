@@ -99,4 +99,11 @@ router.post("/deleteTestimonial", async (req, res) => {
     res.json({"message" : " testimonial successfully Deleted"})
 });
 
+
+
+router.get("/getTestimonials",async(req , res)=>{
+    const response = await testimonials.find({})
+    res.json(response)
+})
+
 module.exports = router;
