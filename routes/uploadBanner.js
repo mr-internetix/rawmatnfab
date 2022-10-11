@@ -60,12 +60,12 @@ router.post("/", upload.single("uploaded_file"), async(req, res) => {
                 })
                 .then((data) => {
                     data.save()
+                    res.json({ message: `Banner Uploaded Sucessfully` });
                 })
                 .catch((error) => {
                     console.log(error);
                 });
         });
-        res.json({ message: `Banner Uploaded Sucessfully` });
     } else {
         res.json({ "message": " Something went Wrong ! please provide file" })
     }

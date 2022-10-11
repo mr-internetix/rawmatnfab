@@ -1,136 +1,145 @@
 <%- include('./header.ejs'); %>
 
 <div class="container-fluid product-texture">
-    
+
     <div class="row px-lg-5">
         <%- include('./product-sidebar.ejs'); %>
         <div class="col-sm-9 my-lg-3 py-5 px-3" style="height:100%;border-radius:15px">
-            <div class="row  px-lg-5">
+            <div class="row py-5" style="position:relative">
                 <div class="col-sm-12 text-center">
-                    <img class="img-fluid w-100" src="/static/assets/images/rawmatnfab.jpg" style="border-radius:20px" >
+                    <img class="img-fluid w-100" src="/static/assets/images/Our Product Range new.png"
+                        style="border-radius:20px;box-shadow: 20px 20px 50px 20px #000;">
                 </div>
-            </div>
+                <div class="col-sm-12 text-center" style="position:absolute;z-index:99">
+                    <div class="range_gap">
+                        <h1 class="Alegreya text-uppercase animate__animated ani  mate__fadeInUp"
+                            style="font-weight:bolder;text-shadow: 2px 2px #000;">
+                            Our Product Range
+                        </h1>
+                        <p class="animate__animated animate__fadeInUp animate__delay-2s variety-slogan"
+                            style="color:#fff;font-weight:lighter!important">Explore a
+                            wide
+                            variety of product </p>
+                    </div>
+
+
+                </div>
+           
             <div class="swiper productcategory mobile-category mt-5">
                 <h3 class="py-lg-5 px-2">Category</h3>
                 <div class="swiper-wrapper py-3">
-                    <div class="swiper-slide"><button class="px-3 py-2 category-button">Flanges</button></div>
-                    <div class="swiper-slide"><button class="px-3 py-2 category-button">Butt Weld Fittings</button></div>
-                    <div class="swiper-slide"><button class="px-3 py-2 category-button">Forged Fitting</button></div>
-                    <div class="swiper-slide"><button class="px-3 py-2 category-button">Pipe & Tube</button></div>
-                    <div class="swiper-slide"><button class="px-3 py-2 category-button">Plate</button></div>
-                    <div class="swiper-slide"><button class="px-3 py-2 category-button">Refactory Anchor</button></div>
-                    <div class="swiper-slide"><button class="px-3 py-2 category-button">Structural Steel</button></div>
-                    <div class="swiper-slide"><button class="px-3 py-2 category-button">Compression Fitting</button></div>
-                    <div class="swiper-slide"><button class="px-3 py-2 category-button">Fastners</button></div>
+                    <% categoriesData.map(category => { %> 
+                    <div class="swiper-slide"><a href="/category?id=<%= category.categoryId %>"><button class="px-3 py-2 category-button"><%= category.categoryName %></button></a></div>
+                    <% }) %> 
                 </div>
-                
+
             </div>
-            
+
 
             <div class="container pad-0 my-4 glass">
                 <h3 class="py-lg-5 px-2 block-small text-light">Product</h3>
 
-                <div class="row flex-column-reverse flex-lg-row">
+                <div class="row  flex-lg-row">
                     <div class="col-sm-6">
                         <div class="main_view text-center my-3">
-                            <img src="<%= currentCategoryData[0].categoryImages[0] %> " id="main" alt="IMAGE">
+                            <img src="<%= currentCategoryData[0].categoryImages[0] %>" id="main" alt="IMAGE">
                         </div>
-            
+
                         <!-- All images with side view -->
                         <div class="side_view">
                             <% currentCategoryData[0].categoryImages.map(img => { %>
-                                <img src="<%= img %>" onclick="change(this.src)">
-                                
+                            <img src="<%= img %>" onclick="change(this.src)">
                             <% } )%>
                             
-                            
+
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <h3 class="pt-5 pb-5 px-lg-5 text-light"><%= currentCategoryData[0].categoryName %> </h3>
-
+                        <h3 class="pt-5 pb-5 px-lg-5 text-light"><%= currentCategoryData[0].categoryName %></h3>
                         <p class="px-lg-5 text-light" style="font: size 16px;">
-                        <i class="fa-solid fa-star p-1 text-warning"></i><i class="fa-solid fa-star text-warning p-1"></i><i class="fa-solid fa-star text-warning p-1"></i><i class="fa-solid fa-star text-warning p-1"></i><i class="fa-solid fa-star text-light p-1"></i><span class="text-light"> (1 CUSTOMER REVIEW)</span>
-                        <br><br>
-                        <%- currentCategoryData[0].shortDescription %> 
-                        </p>
-                        
-
-                    </div>
-                <div class="col-sm-12 p-lg-5">
-                <div class="w3-container">
-                  
-
-                    <div class="w3-bar  py-3">
-                        <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'London')">Item Description </button>
-                        <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Paris')">Metal Composition</button></button>
-                        <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Tokyo')">Dimension Standard</button>
-                    </div>
-                    
-                    <div id="London" class="w3-container w3-border city">
-                        
-                        <p><br><b class="text-light">ITEM DESCRIPTION: <br><br>
-                           <%- currentCategoryData[0].itemDescription %> 
-                        </p>
-                    </div>
-
-                    <div id="Paris" class="w3-container w3-border city" style="display:none">
-                        
-                        <p><br><b class="text-secondary"><b> Metal Composition </b><br><br>
-                            <%- currentCategoryData[0].metalComposition %> 
-                        </p> 
-                    </div>
-
-                    <div id="Tokyo" class="w3-container w3-border city" style="display:none">
-                  
-                        <p><br>
-                        <b class="text-secondary">DIMENSION STNDARD:</b><br><br>
+                            <i class="fa-solid fa-star p-1 text-warning"></i><i
+                                class="fa-solid fa-star text-warning p-1"></i><i
+                                class="fa-solid fa-star text-warning p-1"></i><i
+                                class="fa-solid fa-star text-warning p-1"></i><i
+                                class="fa-solid fa-star text-light p-1"></i><span class="text-light"> (1 CUSTOMER
+                                REVIEW)</span>
+                            <br><br>
+                            <%- currentCategoryData[0].shortDescription %> 
                             
-                        <%- currentCategoryData[0].dimensionStandard %> 
-</p>
-                    </div>
+
+                        </p>
+
+
                     </div>
                 </div>
+                    <div class="col-sm-12 p-lg-5">
+                        <div class="w3-container">
+
+
+                            <div class="w3-bar  py-3">
+                                <button class="w3-bar-item w3-button tablink w3-red"
+                                    onclick="openCity(event,'London')">Item Description </button>
+                                <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Paris')">Metal Grade</button></button>
+                                <button class="w3-bar-item w3-button tablink"
+                                    onclick="openCity(event,'Tokyo')">Dimension Standard</button>
+                            </div>
+
+                            <div id="London" class="w3-container w3-border city">
+
+                                <p><br><b class="text-light">ITEM DESCRIPTION:</b> <br><br>
+                                    <%- currentCategoryData[0].itemDescription %> 
+                                </p>
+                            </div>
+
+                            <div id="Paris" class="w3-container w3-border city" style="display:none">
+                                METAL GRADE:</b><br><br>
+                                <%- currentCategoryData[0].metalComposition %> 
+                                </p>
+                            </div>
+
+                            <div id="Tokyo" class="w3-container w3-border city" style="display:none">
+
+                                <p><br>
+                                    <b class="text-light">DIMENSION STNDARD:</b><br><br>
+                                    <%- currentCategoryData[0].dimensionStandard %> 
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
 
                 </div>
-                
 
-               
-                
-                
-    </div>     
-    <h3 class="py-5 text-light">Related Product</h3>
-                <div class="row">
+
+
+
+
+            </div>
+            <h3 class="py-5 text-light">Related Product</h3>
+            <div class="row">
                 <div class="swiper relatedproduct">
                     <div class="swiper-wrapper">
                         <% currentCategoryProducts.map( elem =>{ %> 
                         <div class="swiper-slide">
-                            <div class="product-card p-3">
+                            <div class="product-card">
                                 <div class="badge">Hot</div>
                                 <div class="product-tumb">
-                                    <img src="<%= elem.imageUrl[0] %> " alt="">
+                                    <img src="<%= elem.imageUrl[0] %>" alt="">
                                 </div>
                                 <div class="product-details text-light">
-                                    <span class="product-catagory"><%= elem.categoryName %> </span>
-                                    <h4><a class="text-light" href="/product?id=<%-elem.productId %>&category=<%= elem.categoryName %>"><%= elem.productName %> </a></h4>
-                                    <p class="text-light"> <%- elem.shortDescription %> </p>
-                                    
+                                    <span class="product-catagory"><%= elem.categoryName %>  </span>
+                                    <h4><a class="text-light"href="/product?id=<%-elem.productId %>&category=<%= elem.categoryName %>"><%= elem.productName %></a></h4>
+                                    <p class="text-light ellpisis description"> <%-elem.shortDescription %></p>
+
                                 </div>
                             </div>
                         </div>
-
-                        <% }) %> 
+                        <% }) %>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
-                </div>
+            </div>
             <!-- Main view of our gallery -->
-        
-</div>
-</div>    
-        
-      
- 
-    
+        </div>
 </div>
 <%- include('./footer1.ejs'); %>

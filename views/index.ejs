@@ -1,24 +1,143 @@
 <%- include('./header.ejs'); %>
     <!-- carousel -->
-<div class="container-fluid" style="padding-right:0px;padding-left:0px;">
+<!-- <div class="container-fluid" style="padding-right:0px;padding-left:0px;">
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
+         <div class="swiper-slide">
         <video id="video" autoplay="true"  muted loop>
             <source src="/static/assets/images/banner1.mp4" type="video/mp4">
             </video>   
-        </div>
+        </div> 
     <% urls.map((url) =>{ %>
 
         <div class="swiper-slide"><img src="<%=url %>" class="img-fluid"></div>
 
         <% }) %>
-        <!-- <div class="swiper-slide"><img src="assets/images/portrait-young-worker-hard-hat-large-metalworking-plant.jpg" class="img-fluid" style="height:600px;"></div> -->
-      </div>
+        <div class="swiper-slide"><img src="assets/images/portrait-young-worker-hard-hat-large-metalworking-plant.jpg" class="img-fluid" style="height:600px;"></div> 
+      </div
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
+</div>  -->
+<div class="container-fluid" style="padding-right:0px;padding-left:0px;">
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+              aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+              aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+              aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+              aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+              aria-label="Slide 10"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10"
+              aria-label="Slide 11"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11"
+              aria-label="Slide 12"></button>
+      </div>
+      <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000s">
+              <div class="background-banner" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">FLanges
+                  </h1>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+              <div class="background-banner2" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">Butt weld fitting</h1>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+              <div class="background-banner3" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">Plates</h1>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+              <div class="background-banner4" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">Forged fitting
+                  </h1>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+              <div class="background-banner5" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">Bars</h1>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+              <div class="background-banner6" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">Tubes & Fittings</h1>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+              <div class="background-banner7" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">Pipes & Tubes
+                  </h1>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+              <div class="background-banner8" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">Gasket</h1>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+              <div class="background-banner9" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">Fastner</h1>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+              <div class="background-banner10" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">CNC Machining Component</h1>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+              <div class="background-banner11" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">Welding</h1>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+              <div class="background-banner12" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">Pipe Spool</h1>
+              </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+
 </div>
 <div class="container-fluid about-hero p-lg-5 p-small">
 
@@ -26,7 +145,7 @@
     <div class="col-sm-1"></div>
     <div class="col-sm-4 p-3">
       <h3 class="py-lg-5 p-small">WHO WE ARE </h3>
-      <img src="/static/assets/images/interior-steel-factory .jpg" class="img-fluid">
+      <img src="/static/assets/images/interior-steel-factory.jpg" class="img-fluid">
     </div>
     
     <div class="col-sm-6 p-lg-5 p-small">
@@ -165,12 +284,12 @@
   </div>
   </div>
 </div>  
-<div class="container-fluid p-lg-5 p-small">
+<div class="container-fluid p-lg-5 p-small product-texture">
 
   <div class="row"> 
    
     <div class="col-sm-12 p-3">
-      <h3 class="py-5 text-center">SHOP BY CATEGORIES</h3>
+      <h3 class="py-5 text-center text-light">SHOP BY CATEGORIES</h3>
       <div class="row">
         <% if (about.length > 6) { %>
          
@@ -187,7 +306,7 @@
           
          >
           <div class="text-left"><img class="p-4" style="border-radius:50%;background-color:#f0f0f0;position:absolute;" src="/static/assets/images/flange.png"></div>
-          <div class="px-2"><h3 class="text-center text-light py-2 my-3" style="z-index:-1;border-radius:10px;background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(117,56,37,1) 100%);"><%= item.categoryName %> </h3></div>
+          <div class="px-2"><h3 class="text-center text-light py-2 my-3" style="z-index:-1;border-radius:10px;background-color:#000;"><%= item.categoryName %> </h3></div>
           <div class="row category-card">
             <div class="col-sm-6 sidebar-one category-sidebar" >  
               <% item.products.map( product => { %> 
@@ -197,7 +316,7 @@
             </div>
 
               <div class="col-sm-6 main category-image">
-                <img src="<%= item.categoryImage %>/tr:w-500,h-500" class="img-fluid py-3"> 
+                <img src="<%= item.categoryImage %>" class="img-fluid py-3"> 
                 
               </div>
 

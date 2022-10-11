@@ -77,11 +77,11 @@ router.post("/addproduct", upload.array("product_image"), async(req, res) => {
                         productDescription: productDescription,
                     });
                     const response = await current_product.save();
-                    res.json({ message: "product added" });
+                   
 
                     // handling files
                     if (req.files.length > 0) {
-                        req.files.map((image) => {
+                        await req.files.map((image) => {
                             base64Image
                                 .encoder(path.resolve(image.path))
                                 .then((base64String) => {
@@ -98,6 +98,7 @@ router.post("/addproduct", upload.array("product_image"), async(req, res) => {
                                         });
                                 });
                         });
+                        res.json({ message: "product added" });
                     }
                 } else {
                     res.json({ message: "product already Present !" });
