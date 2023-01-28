@@ -1,0 +1,162 @@
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="/static/assets/css/style.css" />
+    <link rel="icon" type="image/png" href="/static/assets/images/logo.png">
+    <title>Rawmatnfab</title>
+    <meta content="Rawmatnfab" name="keywords">
+    <meta
+        content="Established in the year 2018 RAW matNfab is an ISO 9001: 2015 Certified company and one of the striking Manufacturer of Flanges, Fittings, Outlets, Fasteners, Lifting and Handling Equipment Including Manufacturing of precision CNC machined parts and assemblies for manufacturers in the aerospace, defense & military, food processing & pharmaceutical, heavy equipment, medical equipment, mining, oil & gas, power generation, transportation, and general industrial markets."
+        name="description">
+</head>
+
+<body style="font-family: 'Fira Sans Condensed', sans-serif!important;">
+    <header id="total-header">
+        <!-- top-header -->
+        <div id="top-header" class="container-fluid p-2"
+            style="z-index:999;background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(117,56,37,1) 100%);;color:#fff;">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="text-center small-font">
+                        <i class="fa-solid fa-phone"></i> Call Us: +91-767 803 0302 |&nbsp; &nbsp;
+                        <img src="/static/assets/images/quality-control.png" class="img-fluid"> &nbsp; ISO 9001:2008
+                        Certified Co.
+
+                    </div>
+                </div>
+                <div class="col-sm-6 block-small">
+                    <div class="text-center">
+                        <i class="fa-brands fa-facebook-f"></i> &nbsp; &nbsp;
+                        <i class="fa-brands fa-instagram"></i> &nbsp; &nbsp;
+                        <i class="fa-brands fa-twitter"></i> &nbsp; &nbsp;
+                        <i class="fa-brands fa-linkedin-in"></i>&nbsp; &nbsp;
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- navbar -->
+        <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand" href="/"><img id="logo-width" src="/static/assets/images/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link px-lg-3 active" aria-current="page" href="/">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link px-lg-3" href="/about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-lg-3" aria-current="page" href="/material">Materials</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link px-lg-3 dropbtn drop dropdown-toggle" href="/category/viewAllCategory"
+                                id="navbarDropdown" role="button">
+                                Product
+                            </a>
+                            <div class="dropdown-content">
+                                <% about.map(category=> {%>
+                                    <div class="d-flex bd-highlight">
+                                        <div class="w-100 bd-highlight"><a class="px-5 py-3 text-dark"
+                                                href="/category?id=<%= category.categoryId %>" style="font-size:16px;">
+                                                <%= category.categoryName %>
+                                            </a></div>
+                                        <div class="bd-highlight"><i class="px-5 py-3 text-dark fa-solid fa-angle-right"
+                                                style="font-size:16px;display: flex;align-items: center;justify-content: center;"></i>
+                                        </div>
+                                    </div>
+                                    <% })%>
+
+                            </div>
+                            <!-- <div class="dropdown-content">       
+                      <div class="row">
+                        <div class="column">
+                          <h3 class="px-5 py-3">Flanges</h3>
+                          <a class="px-5 py-3"href="#">SLIP ON FLANGE</a>
+                          <a class="px-5 py-3" href="#">WELDNECK</a>
+                          <a class="px-5 py-3" href="#">LONG WELD NECK</a>
+                        </div>
+                        <div class="column">
+                          <h3 class="px-5 py-3">Butt Weld Fittings</h3>
+                          <a class="px-5 py-3"href="#">SLIP ON FLANGE</a>
+                          <a class="px-5 py-3" href="#">WELDNECK</a>
+                          <a class="px-5 py-3" href="#">LONG WELD NECK</a>
+                        </div>
+                        <div class="column">
+                          <h3 class="px-5 py-3">Forged Fitting</h3>
+                          <a class="px-5 py-3"href="#">SLIP ON FLANGE</a>
+                          <a class="px-5 py-3" href="#">WELDNECK</a>
+                          <a class="px-5 py-3" href="#">LONG WELD NECK</a>
+                        </div>
+                        <div class="column">
+                          <h3 class="px-5 py-3">Pipe & Tube</h3>
+                          <a class="px-5 py-3"href="#">SLIP ON FLANGE</a>
+                          <a class="px-5 py-3" href="#">WELDNECK</a>
+                          <a class="px-5 py-3" href="#">LONG WELD NECK</a>
+                        </div>
+                        <div class="row" style="background-color: #ccc;">
+                        <div class="col-sm-4"></div>
+                          <div class="col-sm-4 px-5">
+                            <div class="outer">
+                            
+                              <div class="button">
+                                <div class="text text-dark py-3">View All Category</div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                  </div> -->
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-lg-3" href="/industries">Industry</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-lg-3" href="/career">Career</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-lg-3" href="/contactus">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-lg-3" target="_blank" href="/brochure">Brochure</a>
+                        </li>
+                        <li class="nav-item block-small">
+                            <a class="nav-link px-lg-3" target="_blank" href="/static/assets/catlog/raw-matnfab.pdf"
+                                style="text-decoration:none;color:black;" download><i
+                                    class="fa-solid fa-download"></i></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+    </header>

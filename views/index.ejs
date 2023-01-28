@@ -1,0 +1,437 @@
+<%- include('./header.ejs'); %>
+    <!-- carousel -->
+<!-- <div class="container-fluid" style="padding-right:0px;padding-left:0px;">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide">
+        <video id="video" autoplay="true"  muted loop>
+            <source src="/static/assets/images/banner1.mp4" type="video/mp4">
+            </video>   
+        </div> 
+    <% urls.map((url) =>{ %>
+
+        <div class="swiper-slide"><img src="<%=url %>" class="img-fluid"></div>
+
+        <% }) %>
+        <div class="swiper-slide"><img src="assets/images/portrait-young-worker-hard-hat-large-metalworking-plant.jpg" class="img-fluid" style="height:600px;"></div> 
+      </div
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+</div>  -->
+<div class="container-fluid" style="padding-right:0px;padding-left:0px;">
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+              aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+              aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+              aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+              aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+              aria-label="Slide 10"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10"
+              aria-label="Slide 11"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11"
+              aria-label="Slide 12"></button>
+      </div>
+      <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000s">
+              <div class="background-banner" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">FLanges
+                  </h1>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+              <div class="background-banner2" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">Butt weld fitting</h1>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+              <div class="background-banner3" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">Plates</h1>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+              <div class="background-banner4" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">Forged fitting
+                  </h1>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+              <div class="background-banner5" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">Bars</h1>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+              <div class="background-banner6" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">Tubes & Fittings</h1>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+              <div class="background-banner7" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">Pipes & Tubes
+                  </h1>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+              <div class="background-banner8" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">Gasket</h1>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+              <div class="background-banner9" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">Fastner</h1>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+              <div class="background-banner10" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">CNC Machining Component</h1>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+              <div class="background-banner11" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">Welding</h1>
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+              <div class="background-banner12" style="display:flex;align-items:center;justify-content: center;">
+                  <h1 class="text-uppercase text-center animate__animated animate__fadeInRightBig animate__slow"
+                      style="color:#fff;font-size:64px;text-align:center;">Pipe Spool</h1>
+              </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+
+</div>
+<div class="container-fluid about-hero p-lg-5 p-small">
+
+  <div class="row"> 
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4 p-3">
+      <h3 class="py-lg-5 p-small">WHO WE ARE </h3>
+      <img src="/static/assets/images/interior-steel-factory.jpg" class="img-fluid">
+    </div>
+    
+    <div class="col-sm-6 p-lg-5 p-small">
+    <h3 class="py-5 block-small"></h3>
+      <h5>Welcome to Raw Matnfab</h5>
+      <p>
+        <%- aboutData[0].about %> 
+      </p>
+      <div><a href="/about"><button class="py-2 px-3" style="background-color:#753825;color:#fff;border:none;">Learn More</button></a></div>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+</div>
+<div class="container-fluid p-lg-5 p-small" style="background-color:#d7d3d2;">
+    <div class="row px-lg-5 p-small">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-4 p-3">
+      <h3 class="pt-5 pb-3" style="color:#753825;">Our Services </h3>
+      <h1>We supply pipes, tubes, plates, fittings and flanges of major approved brands and many more.</h1><br>
+      <div><a href="/contactus"><button class="py-2 px-3" style="background-color:#753825;color:#fff;border:none;">Contact Us</button></a></div>
+      </div>
+      <div class="col-sm-6 p-lg-5 p-small">
+        <h3 class="pt-5 pb-3"></h3>
+        <p>RAW matNfab is an ISO 9001: 2015 Certified company and one of the striking Manufacturer of Flanges, Fittings, Outlets, Fasteners, Lifting and Handling Equipment Including Manufacturing of precision CNC machined parts and assemblies for manufacturers in the aerospace, defense & military, food processing & pharmaceutical, heavy equipment, medical equipment, mining, oil & gas, power generation, transportation, and general industrial markets.We supply pipes, tubes, plates, fittings and flanges of major approved brands and many more. Being an ISO certified Company our quality control team ensures that all the products are manufactured as per standard requirement referring to (ASME and ASTM) and all other national and international standards.</p>
+      </div>
+    </div>
+  <div class="container py-lg-5 p-small">
+    <div class="row">
+      <div class="col-sm-4 p-lg-4 p-small">
+        <div class="w-100 flip-card" style="min-height:350px;">
+          <div class="flip-card-inner">
+            <div class="flip-card-front py-3">
+              <div class="text-center p-3">
+                <div class="card w-100">
+                  <img src="/static/assets/images/mission.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Our Mission</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="flip-card-back py-5">
+            <p class="px-4 pb-4">
+              <%- missionData[0].mission %>   
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 p-lg-4 p-small">
+        <div class="w-100 flip-card" style="min-height:350px;">
+          <div class="flip-card-inner">
+            <div class="flip-card-front py-3">
+              <div class="text-center p-3">
+                <div class="card w-100">
+                  <img src="/static/assets/images/vision.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Our Vision</p>
+                  </div>
+                </div>
+              </div>
+
+              
+            </div>
+            <div class="flip-card-back py-5">
+            <p class="px-4 pb-4"><%- missionData[0].vision %> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 p-lg-4 p-small">
+        <div class="w-100 flip-card" style="min-height:350px;">
+          <div class="flip-card-inner">
+            <div class="flip-card-front py-3">
+              <div class="text-center p-3">
+                <div class="card w-100">
+                  <img src="/static/assets/images/goal.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Our Goal</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="flip-card-back py-5">
+            <p class="px-4 pb-4"><%- missionData[0].goal %> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="container-fluid" style="background: rgb(215, 211, 210);
+    background: linear-gradient(180deg, rgba(215, 211, 210, 1) 42%, rgba(241, 242, 247, 1) 71%);">
+
+  <div class="row hero-img py-lg-5 p-small"> 
+  <h3 class="py-3 text-light text-center" style="margin-top:100px;">Our Core Values</h3>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-2 p-2 p-small">
+    <div class="value-card text-center text-light hover-card" data-aos="fade-up" data-aos-duration="1000" style="border:1px solid grey;border-radius:10px;min-height:260px;margin-bottom:100px;">
+      <img  class="my-3" src="/static/assets/images/quality.png">
+      <h3 class="my-3">Quality / Excellence</h3>
+      <p class="p-small"> RAW matNfab. employees are driven to achieve excellence in all endeavors.</p>
+    </div>
+  </div>
+  <div class="col-sm-2 p-2 p-small">
+    <div class="value-card text-center text-light hover-card" data-aos="fade-up" data-aos-duration="2000" style="border:1px solid grey;border-radius:10px;min-height:260px;margin-bottom:100px;">
+      <img  class="my-3" src="/static/assets/images/we-can-do-it.png">
+      <h3 class="my-3">Can Do Attitude</h3>
+      <p class="p-small"> RAW matNfab. employees are confident, courageous and resourceful in the face of challenges.</p>
+    </div>
+  </div>
+  <div class="col-sm-2 p-2 p-small">
+    <div class="value-card text-center text-light hover-card" data-aos="fade-up" data-aos-duration="3000" style="border:1px solid grey;border-radius:10px;min-height:260px;margin-bottom:100px;">
+      <img  class="my-3" src="/static/assets/images/honesty.png">
+      <h3 class="my-3">Respectful</h3>
+      <p class="p-small"> RAW matNfab. employees are considerate of others and others’ things.</p>
+    </div>
+  </div>
+  <div class="col-sm-2 p-2 p-small">
+    <div class="value-card text-center text-light hover-card" data-aos="fade-up" data-aos-duration="3000" style="border:1px solid grey;border-radius:10px;min-height:260px;margin-bottom:100px;">
+      <img  class="my-3" src="/static/assets/images/best-seller.png">
+      <h3 class="my-3">Truthful</h3>
+      <p class="p-small">  RAW matNfab. employees are both honest and forthcoming with full disclosure in all communications.</p>
+    </div>
+  </div>
+  <div class="col-sm-2 p-2 p-small">
+    <div class="value-card text-center text-light hover-card" data-aos="fade-up" data-aos-duration="3000" style="border:1px solid grey;border-radius:10px;min-height:260px;margin-bottom:100px;">
+      <img  class="my-3" src="/static/assets/images/generous.png">
+      <h3 class="my-3">Generous</h3>
+      <p class="p-small">  RAW matNfab. employees are unselfish by nature, willing to give time, knowledge and insight to support team members in need.</p>
+    </div>
+  </div>
+  </div>
+</div>  
+<div class="container-fluid p-lg-5 p-small product-texture">
+
+  <div class="row"> 
+   
+    <div class="col-sm-12 p-3">
+      <h3 class="py-5 text-center text-light">SHOP BY CATEGORIES</h3>
+      <div class="row">
+        <% if (about.length > 6) { %>
+         
+          <% about = about.slice(0,6) %> 
+        <% } %>
+        <% about.forEach((item , index)=>{%> 
+        <div class="col-sm-4 p-2" data-aos="fade-up" <% if (index == 0) { %>
+          data-aos-duration="500"
+         
+          <% } else { %>
+            data-aos-duration="<%= (index + 1) * 500 %>"
+
+            <% } %>
+          
+         >
+          <div class="text-left"><img class="p-4" style="border-radius:50%;background-color:#f0f0f0;position:absolute;" src="/static/assets/images/flange.png"></div>
+          <div class="px-2"><h3 class="text-center text-light py-2 my-3" style="z-index:-1;border-radius:10px;background-color:#000;"><%= item.categoryName %> </h3></div>
+          <div class="row category-card">
+            <div class="col-sm-6 sidebar-one category-sidebar" >  
+              <% item.products.map( product => { %> 
+                <a href="/product?id=<%= product.productId%>&category=<%= product.categoryName %>" style="font-size:14px!important;"> <%= product.productName %> </a>
+            
+              <%})  %> 
+            </div>
+
+              <div class="col-sm-6 main category-image">
+                <img src="<%= item.categoryImage %>" class="img-fluid py-3"> 
+                
+              </div>
+
+        </div>
+        </div>
+
+          <% })  %> 
+        
+      </div>
+      <div class="row my-3 text-center">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4 px-5" data-aos="fade-up" data-aos-duration="3000">
+          <div class="outer">
+          <a href="/category/viewAllCategory"><div class="button">
+              <div class="text py-3">View All Category</div></a>
+            </div>
+          </div>
+
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid p-small">
+  <div class="row hero-img2 box py-5 p-small">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4 py-5">
+      <img class="circle pulse" src="/static/assets/images/play-button.png"> <span class="text-light" style="font-size:32px!important;"> &nbsp; &nbsp;PLay Now</span><br>
+      <h1 class="pt-4 pb-2 text-light">We're thriving and building </h1>
+      <h1 class="py-2 text-light">better products</h1>
+    </div>
+    <div class="col-sm-2 p-small py-lg-5 px-lg-5">
+      <div class="value-card text-center text-light hover-card p-2 p-small" style="border:1px solid grey;border-radius:10px;min-height:260px;">
+        <img  class="my-3" src="/static/assets/images/happyclient.png">
+        <h1 class="my-3 h-border" id="number1">1223</h1>
+        <p> Happy Clients</p>
+      </div>
+
+    </div>
+    <div class="col-sm-2 p-small py-lg-5 px-lg-5">
+      <div class="value-card text-center text-light hover-card p-2 p-small" style="border:1px solid grey;border-radius:10px;min-height:260px;">
+        <img  class="my-3" src="/static/assets/images/hand.png">
+        <h1 class="my-3 h-border" id="number2">91</h1>
+        <p> Working Hands</p>
+      </div>
+
+    </div>
+    <div class="col-sm-2 p-small py-lg-5 px-lg-5">
+      <div class="value-card text-center text-light hover-card p-2 p-small" style="border:1px solid grey;border-radius:10px;min-height:260px;">
+        <img  class="my-3" src="/static/assets/images/expert.png">
+        <h1 class="my-3 h-border" id="number3">23</h1>
+        <p> Active Experts</p>
+      </div>
+
+    </div>
+    
+
+  </div>
+</div> 
+<div class="container-fluid py-5 review-bacground">
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+    <h3 class="pt-5 pb-5 text-center text-light" style="font-size:2.5rem">Happy Customers Said </h3>
+    <p class="text-center text-light" style="font-size:1.5rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum soluta eaque cum eius, recusandae possimus repellat? Tenetur non voluptatem rerum, et totam laudantium maiores iusto. Sit pariatur earum odit dolores.</p>
+
+    </div>
+  </div>
+  <!-- <div class="row">
+    <div class="col-sm-4 p-3">
+      <div class="w-100 testimonial-content testimonial-one text-justify" style="clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 86%, 10% 87%, 0 100%, 0% 75%);height:250px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi mollitia autem pariatur vitae necessitatibus ratione eius deserunt eos saepe nemo quia, minima possimus asperiores est. Id ducimus doloribus accusantium tenetur.</div>
+      <div class="flex"><div><img src="assets/images/user.png"></div><div class="px-2"><h4>Sujit sahu</h4><p>Student</p></div></div>
+    </div>
+    <div class="col-sm-4 p-3">
+      <div class="w-100 testimonial-content testimonial-one text-justify" style="clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 86%, 10% 87%, 0 100%, 0% 75%);height:250px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique possimus inventore doloremque architecto pariatur ad praesentium voluptates eos sapiente recusandae vitae illum ducimus ullam, quia iste reiciendis delectus consequatur porro.</div>
+      <div class="flex"><div><img src="assets/images/user.png"></div><div class="px-2"><h4>Sujit sahu</h4><p>Student</p></div></div>
+    </div>
+    <div class="col-sm-4 p-3">
+      <div class="w-100 testimonial-content testimonial-one text-justify" style="clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 86%, 10% 87%, 0 100%, 0% 75%);height:250px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quam, cupiditate officiis aut similique incidunt, officia veritatis error distinctio quas dolore, dolorum totam quaerat expedita ex odit cum eum. Vel.</div>
+      <div class="flex"><div><img src="assets/images/user.png"></div><div class="px-2"><h4>Sujit sahu</h4><p>Student</p></div></div>
+    </div>
+  </div> -->
+  <div class="row p-small">
+
+  <div class="testimonial-container">
+  <div class="progress-bar"></div>
+  <div class="fas fa-quote-right fa-quote"></div>
+  <div class="fas fa-quote-left fa-quote"></div>
+  <p class="testimonial text-center p-2">
+    I've worked with literally hundreds of HTML/CSS developers and I have to
+    say the top spot goes to this guy. This guy is an amazing developer. He
+    stresses on good, clean code and pays heed to the details. I love
+    developers who respect each and every aspect of a throughly thought out
+    design and do their best to put it in code. He goes over and beyond and
+    transforms ART into PIXELS - without a glitch, every time.
+  </p>
+  <div class="user">
+    <img
+         src="https://randomuser.me/api/portraits/women/40.jpg"
+         alt="user"
+         class="user-image"
+         />
+    <div class="user-details">
+      <h4 class="username">Miyah Myles</h4>
+      <p class="role">Marketing</p>
+    </div>
+  </div>
+</div>
+  </div>
+
+</div>
+ 
+
+ 
+ 
+<%- include('./footer.ejs'); %>

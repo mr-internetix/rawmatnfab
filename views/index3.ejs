@@ -1,0 +1,311 @@
+<%- include('./header.ejs'); %>
+    <!-- carousel -->
+    <div class="container-fluid" style="padding-right:0px;padding-left:0px;">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <video id="video" autoplay="true"  muted loop>
+                        <source src="/static/assets/images/banner1.mp4" type="video/mp4">
+                        </video>
+                </div>
+                <% urls.map((url) =>{ %>
+
+                    <div class="swiper-slide"><img src="<%=url %>" class="img-fluid"></div>
+
+                    <% }) %>
+
+                   
+                        <!-- <div class="swiper-slide"><img src="assets/images/portrait-young-worker-hard-hat-large-metalworking-plant.jpg" class="img-fluid" style="height:600px;"></div> -->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="container-fluid about-hero p-5">
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-4 p-3">
+                <h3 class="py-5">WHO WE ARE </h3>
+                <img src="/static/assets/images/interior-steel-factory .jpg" class="img-fluid">
+            </div>
+
+            <div class="col-sm-6 p-5">
+                <h3 class="py-5"></h3>
+                <h5>Welcome to Raw Matnfab</h5>
+                <p>Established in the year 2018 RAW matNfab is an ISO 9001: 2015 Certified company and one of the striking Manufacturer of Flanges, Fittings, Outlets, Fasteners, Lifting and Handling Equipment Including Manufacturing of precision CNC machined
+                    parts and assemblies for manufacturers in the aerospace, defense & military, food processing & pharmaceutical, heavy equipment, medical equipment, mining, oil & gas, power generation, transportation, and general industrial markets.
+                    The company's state-of-the-art facilities use the latest CNC manufacturing technologies to produce complex and intricate components that meet or exceed the most critical tolerances. We machine parts from castings, weldments, forgings,
+                    tubing and bar stock that range in weight from 1 pound to 2,000 pounds and pipe spool and Fabricated Components and Supplier of Industrial Raw Materials Pipes, Plates, Bars, Coils in Ferrous and Non Ferrous Grades. We maintain total
+                    control on the quality of goods and use the latest technology to manufacture our products.</p>
+                <div><button class="py-2 px-3" style="background-color:#753825;color:#fff;border:none;">Learn More</button></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+    <div class="container-fluid p-5" style="background-color:#d7d3d2;">
+        <div class="row px-5">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-4 p-3">
+                <h3 class="pt-5 pb-3" style="color:#753825;">Our Services </h3>
+                <h1>We supply pipes, tubes, plates, fittings and flanges of major approved brands and many more.</h1><br>
+                <div><button class="py-2 px-3" style="background-color:#753825;color:#fff;border:none;">Contact Us</button></div>
+            </div>
+            <div class="col-sm-6 p-5">
+                <h3 class="pt-5 pb-3"></h3>
+                <p>RAW matNfab is an ISO 9001: 2015 Certified company and one of the striking Manufacturer of Flanges, Fittings, Outlets, Fasteners, Lifting and Handling Equipment Including Manufacturing of precision CNC machined parts and assemblies for
+                    manufacturers in the aerospace, defense & military, food processing & pharmaceutical, heavy equipment, medical equipment, mining, oil & gas, power generation, transportation, and general industrial markets.We supply pipes, tubes, plates,
+                    fittings and flanges of major approved brands and many more. Being an ISO certified Company our quality control team ensures that all the products are manufactured as per standard requirement referring to (ASME and ASTM) and all other
+                    national and international standards.</p>
+            </div>
+        </div>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-sm-4 p-4">
+                    <div class="w-100 flip-card" style="min-height:350px;">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front py-3">
+                                <div class="text-center p-3">
+                                    <div class="card w-100">
+                                        <img src="/static/assets/images/mission.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Our Mission</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="flip-card-back py-5">
+                                <p class="px-4 pb-4">To supply high-quality steel products, providing ancillary services and solutions to worldwide clients while using innovative technologies which are environment-friendly to motivate our employees to focus on continuous
+                                    improvement, highest business standards, work ethics, and corporate citizenship. We are committed to exceeding the expectations of our customers by providing high-quality products & services. We aim to excel in everything
+                                    we do.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 p-4">
+                    <div class="w-100 flip-card" style="min-height:350px;">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front py-3">
+                                <div class="text-center p-3">
+                                    <div class="card w-100">
+                                        <img src="/static/assets/images/vision.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Our Vision</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="flip-card-back py-5">
+                                <p class="px-4 pb-4">To attain a forefront position in the global manufacturer & supplier of steel product, complex precision CNC machined components & engineering goods through performance excellence by providing quality & cost-effective metal
+                                    packaging products.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 p-4">
+                    <div class="w-100 flip-card" style="min-height:350px;">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front py-3">
+                                <div class="text-center p-3">
+                                    <div class="card w-100">
+                                        <img src="/static/assets/images/goal.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Our Goal</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="flip-card-back py-5">
+                                <p class="px-4 pb-4">To supply high-quality steel products, providing ancillary services and solutions to worldwide clients while using innovative technologies which are environment-friendly to motivate our employees to focus on continuous
+                                    improvement, highest business standards, work ethics, and corporate citizenship. We are committed to exceeding the expectations of our customers by providing high-quality products & services. We aim to excel in everything
+                                    we do.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid" style="background-color:#fffcf9;">
+
+        <div class="row hero-img py-5">
+            <h3 class="py-3 text-light text-center">Our Core Values</h3>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2 p-2">
+                <div class="value-card text-center text-light hover-card" style="border:1px solid grey;border-radius:10px;min-height:260px;">
+                    <img class="my-3" src="/static/assets/images/quality.png">
+                    <h3 class="my-3">Quality / Excellence</h3>
+                    <p> RAW matNfab. employees are driven to achieve excellence in all endeavors.</p>
+                </div>
+            </div>
+            <div class="col-sm-2 p-2">
+                <div class="value-card text-center text-light hover-card" style="border:1px solid grey;border-radius:10px;min-height:260px;">
+                    <img class="my-3" src="/static/assets/images/we-can-do-it.png">
+                    <h3 class="my-3">Can Do Attitude</h3>
+                    <p> RAW matNfab. employees are confident, courageous and resourceful in the face of challenges.</p>
+                </div>
+            </div>
+            <div class="col-sm-2 p-2">
+                <div class="value-card text-center text-light hover-card" style="border:1px solid grey;border-radius:10px;min-height:260px;">
+                    <img class="my-3" src="/static/assets/images/honesty.png">
+                    <h3 class="my-3">Respectful</h3>
+                    <p> RAW matNfab. employees are considerate of others and others’ things.</p>
+                </div>
+            </div>
+            <div class="col-sm-2 p-2">
+                <div class="value-card text-center text-light hover-card" style="border:1px solid grey;border-radius:10px;min-height:260px;">
+                    <img class="my-3" src="/static/assets/images/best-seller.png">
+                    <h3 class="my-3">Truthful</h3>
+                    <p> RAW matNfab. employees are both honest and forthcoming with full disclosure in all communications.</p>
+                </div>
+            </div>
+            <div class="col-sm-2 p-2">
+                <div class="value-card text-center text-light hover-card" style="border:1px solid grey;border-radius:10px;min-height:260px;">
+                    <img class="my-3" src="/static/assets/images/generous.png">
+                    <h3 class="my-3">Generous</h3>
+                    <p> RAW matNfab. employees are unselfish by nature, willing to give time, knowledge and insight to support team members in need.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-5">
+
+        <div class="row">
+
+            <div class="col-sm-12 p-3">
+                <h3 class="py-5 text-center">SHOP BY CATEGORIES</h3>
+                <div class="row">
+                    <% about.map((category) =>{ %>
+                        <div class="col-sm-4 p-2">
+                            <div class="text-left"><img class="p-4" style="border-radius:50%;background-color:#f0f0f0;position:absolute;" src="/static/assets/images/flange.png"></div>
+                            <div class="px-2">
+                                <h3 class="text-center bg-dark text-light py-2 my-3" style="z-index:-1;border-radius:10px"><%= category.categoryName %></h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 sidebar-one">
+                                    <% category.products.map(product =>{ %> 
+                                    <a href="/product?id=<%= product.productId %>&category=<%= product.categoryName %>" style="font-size:14px!important;"><%= product.productName%></a>
+                                    <% }) %>
+                                </div>
+    
+                                <div class="col-sm-6 main">
+                                    <img src="<%=category.categoryImage%>" class="img-fluid py-3">
+                                </div>
+    
+                            </div>
+    
+    
+                        </div>
+    
+                        <% }) %>
+                    
+                <div class="row my-3 text-center">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4 px-5">
+                        <div class="outer">
+                            <a href="product.php">
+                                <div class="button">
+                                    <div class="text py-3">View All Category</div>
+                            </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row hero-img2">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-4 py-5">
+                <img src="/static/assets/images/play-button.png"> <span class="text-light" style="font-size:32px!important;"> &nbsp; &nbsp;PLay Now</span><br>
+                <h1 class="pt-4 pb-2 text-light">We're thriving and building </h1>
+                <h1 class="py-2 text-light">better products</h1>
+            </div>
+            <div class="col-sm-2 py-5 px-2">
+                <div class="value-card text-center text-light hover-card p-2" style="border:1px solid grey;border-radius:10px;min-height:260px;">
+                    <img class="my-3" src="/static/assets/images/happyclient.png">
+                    <h1 class="my-3 h-border">1223</h1>
+                    <p> Happy Clients</p>
+                </div>
+
+            </div>
+            <div class="col-sm-2 py-5 px-2">
+                <div class="value-card text-center text-light hover-card p-2" style="border:1px solid grey;border-radius:10px;min-height:260px;">
+                    <img class="my-3" src="/static/assets/images/hand.png">
+                    <h1 class="my-3 h-border">91</h1>
+                    <p> Working Hands</p>
+                </div>
+
+            </div>
+            <div class="col-sm-2 py-5 px-2">
+                <div class="value-card text-center text-light hover-card p-2" style="border:1px solid grey;border-radius:10px;min-height:260px;">
+                    <img class="my-3" src="/static/assets/images/expert.png">
+                    <h1 class="my-3 h-border">23</h1>
+                    <p> Active Experts</p>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <h3 class="pt-5 pb-5 text-center">Happy Customers Said </h3>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum soluta eaque cum eius, recusandae possimus repellat? Tenetur non voluptatem rerum, et totam laudantium maiores iusto. Sit pariatur earum odit dolores.</p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 p-3">
+                <div class="w-100 testimonial-content testimonial-one text-justify" style="clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 86%, 10% 87%, 0 100%, 0% 75%);height:250px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi mollitia autem pariatur vitae necessitatibus ratione eius deserunt eos saepe nemo quia, minima possimus asperiores est. Id ducimus doloribus accusantium tenetur.</div>
+                <div class="flex">
+                    <div><img src="/static/assets/images/user.png"></div>
+                    <div class="px-2">
+                        <h4>Sujit sahu</h4>
+                        <p>Student</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 p-3">
+                <div class="w-100 testimonial-content testimonial-one text-justify" style="clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 86%, 10% 87%, 0 100%, 0% 75%);height:250px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique possimus inventore doloremque architecto pariatur ad praesentium voluptates eos sapiente recusandae vitae illum ducimus ullam, quia iste reiciendis delectus consequatur
+                    porro.
+                </div>
+                <div class="flex">
+                    <div><img src="/static/assets/images/user.png"></div>
+                    <div class="px-2">
+                        <h4>Sujit sahu</h4>
+                        <p>Student</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 p-3">
+                <div class="w-100 testimonial-content testimonial-one text-justify" style="clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 86%, 10% 87%, 0 100%, 0% 75%);height:250px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quam, cupiditate officiis aut similique incidunt, officia veritatis error distinctio quas dolore, dolorum totam quaerat expedita ex odit cum eum. Vel.</div>
+                <div class="flex">
+                    <div><img src="/static/assets/images/user.png"></div>
+                    <div class="px-2">
+                        <h4>Sujit sahu</h4>
+                        <p>Student</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <%- include('./footer.ejs'); %>

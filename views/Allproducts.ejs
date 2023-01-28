@@ -1,0 +1,78 @@
+<%- include('./header.ejs'); %>
+
+<div class="container-fluid product-texture">
+    <!-- <div class="row  px-5">
+        <div class="col-sm-12 text-center">
+            <img class="img-fluid w-100" src="assets/images/rawmatnfab.jpg" style="border-radius:20px " >
+        </div>
+    </div> -->
+    <div class="row px-lg-5 pad-0">
+        <%- include('./product-sidebar.ejs'); %>
+          
+        <div id="productlist-container" class="col-sm-9 p-lg-3 pad-0">
+            <div class="row py-5" style="position:relative">
+                <div class="col-sm-12 text-center">
+                    <img class="img-fluid w-100" src="/static/assets/images/Our Product Range new.png"
+                        style="border-radius:20px;box-shadow: 20px 20px 50px 20px #000;">
+                </div>
+                <div class="col-sm-12 text-center" style="position:absolute;z-index:99">
+                    <div class="range_gap">
+                        <h1 class="Alegreya text-uppercase animate__animated animate__fadeInUp"
+                            style="font-weight:bolder;text-shadow: 2px 2px #000;">
+                            Our Product Range
+                        </h1>
+                        <p class="animate__animated animate__fadeInUp animate__delay-2s variety-slogan"
+                            style="color:#fff;font-weight:lighter!important">Explore a
+                            wide
+                            variety of product </p>
+                    </div>
+
+
+                </div>
+            </div>
+                <h3 class="py-lg-5 px-2 text-light">Product Range</h3>
+                <div class="row">
+                <div class="swiper productcategory mobile-category">
+                    <!-- <h3 class="py-lg-5 px-2">Category</h3> -->
+                    <div class="swiper-wrapper py-3">
+
+                        <% categoriesData.map(category => { %> 
+                        <div class="swiper-slide"><a class="px-3 py-2 category-button text-center" style="color:black;" href="/category?id=<%= category.categoryId %>"> <%= category.categoryName %> </a></div>
+                    <% }) %> 
+                    </div>
+                    
+                </div>
+
+                </div>
+            
+             
+                <div class="row">
+                    <% categoriesData.map(category => { %>
+              
+                    <div class="col-sm-4 p-2">
+                        <div class="product-card">
+                            <div class="badge">Hot</div>
+                            <div class="product-tumb">
+                                <img src="<%= category.categoryImage %>" alt="">
+                            </div>
+                            <div class="product-details">
+                                
+                                <h4><a  style="color:#fff;" href="/category?id=<%= category.categoryId %>"> <%= category.categoryName %> </a></h4>
+                                <p style="color:#fff !important;" class="text-light ellpisis description"> <%- category.categoryDesc %> </p>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                          
+                    <% }) %>
+
+                </div>
+                    
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('./footer1.ejs'); %>
