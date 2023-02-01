@@ -158,5 +158,27 @@
             </div>
         </nav>
 
-
     </header>
+
+    
+    <script>
+
+        document.addEventListener("DOMContentLoaded",()=>{
+                        let headerHeight = document.getElementById("header").clientHeight
+                        let topHeader  = document.getElementById("top-header").clientHeight
+                        document.querySelector(".dropdown-content").style = `top:${headerHeight+topHeader-20}px!important;`
+               
+                document.addEventListener("scroll",(e)=>{
+                    if(window.scrollY <= topHeader+headerHeight){
+
+                        document.querySelector(".dropdown-content").style = `top:${headerHeight+topHeader-20}px!important;`
+
+                    }
+                    if(document.getElementById("header").style.position == "fixed"){
+                        document.querySelector(".dropdown-content").style.position = "fixed"
+                        document.querySelector(".dropdown-content").style = `top:${headerHeight-18}px!important;`
+
+                    }
+                })
+        })
+    </script>
