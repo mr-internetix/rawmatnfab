@@ -66,7 +66,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link px-lg-3 active" aria-current="page" href="/">Home</a>
+                            <a class="nav-link px-lg-3 " aria-current="page" href="/">Home</a>
                         </li>
 
                         <li class="nav-item">
@@ -180,5 +180,20 @@
 
                     }
                 })
+
+
+                const urlPaths = ["/","/about","/material","/category","/industries","/career","/contactus","/category/viewAllCategory"]
+                if(urlPaths.includes(window.location.pathname)){    
+                    const navbar = document.querySelector('.navbar-collapse');
+                    const anchor_tag = navbar.querySelectorAll("a")
+
+                    anchor_tag.forEach((anchor)=>{
+                        if (anchor.getAttribute("href").includes(window.location.pathname)){
+                            anchor.classList.add("active")
+                        }
+                    })
+                }
+
+
         })
     </script>
