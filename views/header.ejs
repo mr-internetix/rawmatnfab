@@ -183,12 +183,20 @@
 
 
                 const urlPaths = ["/","/about","/material","/category","/industries","/career","/contactus","/category/viewAllCategory"]
-                if(urlPaths.includes(window.location.pathname)){    
+                if(urlPaths.includes(window.location.pathname)){   
                     const navbar = document.querySelector('.navbar-collapse');
                     const anchor_tag = navbar.querySelectorAll("a")
 
                     anchor_tag.forEach((anchor)=>{
-                        if (anchor.getAttribute("href").includes(window.location.pathname)){
+
+                        if (window.location.pathname === "/category") {
+                            anchor_tag.forEach((elem)=>{
+                                if (elem.getAttribute("href") == "/category/viewAllCategory"){
+                                    elem.classList.add("active")
+                                }
+                            })
+                        } 
+                        else if (anchor.getAttribute("href") === (window.location.pathname)){
                             anchor.classList.add("active")
                         }
                     })
